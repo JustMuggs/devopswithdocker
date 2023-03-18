@@ -1,0 +1,6 @@
+# Image url
+https://hub.docker.com/r/muggs/spring-app
+# Run with
+docker run -p 8080:8080 spring-app
+# Check this url
+http://localhost:8080

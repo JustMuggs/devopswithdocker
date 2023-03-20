@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13.2-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: example
+    container_name: postgres
+    volumes:
+      - type: bind
+        source: ./database
+        target: /var/lib/postgresql/data
+  redis:
+      image: redis
+  backend:
+      build: ./material-applications/example-backend
+      image: backend-project
+      ports:
+        - "8080:8080"
+      environment:
+        - REDIS_HOST=redis
+        - POSTGRES_HOST=postgres
+        - POSTGRES_PASSWORD=example
+  frontend:
+      build: ./material-applications/example-frontend
+      image: frontend-project
+      ports:
+        - "5000:5000"
+volumes:
+  postgres:

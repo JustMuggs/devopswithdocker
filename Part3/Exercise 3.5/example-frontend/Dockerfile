@@ -7,7 +7,8 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash
 RUN apt-get install -y nodejs
 COPY . .
 RUN npm install
-ENV REACT_APP_BACKEND_URL=http://localhost/api
+#Enable the env variable if running the full project with reverse-proxy
+#ENV REACT_APP_BACKEND_URL=http://localhost/api
 RUN npm run build
 RUN npm install -g serve
 RUN useradd -m appuser

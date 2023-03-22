@@ -1,0 +1,6 @@
+# Before optimization
+C:\Users\Muggs>docker image ls
+REPOSITORY                          TAG             IMAGE ID       CREATED             SIZE
+muggs/express-app                   latest          d2ec276a51c4   23 hours ago        915MB
+
+# After optimization

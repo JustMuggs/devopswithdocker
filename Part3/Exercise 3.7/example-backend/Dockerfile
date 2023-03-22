@@ -3,6 +3,6 @@ EXPOSE 8080
 WORKDIR /usr/src/app
 COPY . .
 #ENV REQUEST_ORIGIN=http://localhost
-RUN adduser appuser && go build && chown appuser .
+RUN adduser -S appuser && go build && chown appuser .
 USER appuser
 CMD ["./server"]

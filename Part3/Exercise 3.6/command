@@ -1,0 +1,7 @@
+# Before optimizing
+C:\Users\Muggs>docker image ls
+REPOSITORY                          TAG             IMAGE ID       CREATED         SIZE
+frontend                            latest          8e8077d0f80e   18 hours ago    609MB
+backend                             latest          606e1049ca14   18 hours ago    1.07GB
+
+# After optimizing

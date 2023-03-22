@@ -1,0 +1,9 @@
+# Before optimizing
+C:\Users\Muggs>docker image ls
+REPOSITORY                          TAG             IMAGE ID       CREATED          SIZE
+frontend-alpine                     latest          cdd927af56d9   22 minutes ago   465MB
+
+# After optimizing
+C:\Users\Muggs>docker image ls
+REPOSITORY                          TAG             IMAGE ID       CREATED             SIZE
+frontend-alpine-multi               latest          82dd684290ef   2 minutes ago       129MB

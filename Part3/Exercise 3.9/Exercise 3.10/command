@@ -4,3 +4,6 @@ REPOSITORY                          TAG             IMAGE ID       CREATED      
 muggs/express-app                   latest          d2ec276a51c4   23 hours ago        915MB
 
 # After optimization
+C:\Users\Muggs>docker image ls
+REPOSITORY                          TAG             IMAGE ID       CREATED             SIZE
+muggs/express-app-alpine            latest          c1bd533ffb43   3 minutes ago       123MB

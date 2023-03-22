@@ -1,0 +1,3 @@
+C:\Users\Muggs>docker image ls
+REPOSITORY                          TAG             IMAGE ID       CREATED             SIZE
+backend-alpine-multi                latest          738dfcfc90dd   43 seconds ago      18.6MB

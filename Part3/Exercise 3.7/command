@@ -5,3 +5,7 @@ frontend                            latest          aa115a841b7b   About a minut
 backend                             latest          6e6ce2da22c0   22 minutes ago       1.07GB
 
 # After optimizing
+C:\Users\Muggs>docker image ls
+REPOSITORY                          TAG             IMAGE ID       CREATED          SIZE
+frontend-alpine                     latest          cdd927af56d9   50 seconds ago   465MB
+backend-alpine                      latest          0509cb322895   5 minutes ago    447MB
